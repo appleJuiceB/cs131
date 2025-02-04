@@ -1,0 +1,31 @@
+2) What is your home directory path?  How did you find out (commands used)?
+	Command: "pwd";  anshika_jaiswal@instance-20250127-192038:~/cs131$ pwd
+	Output: /home/anshika_jaiswal/cs131
+
+
+3) What is your UID?  To what group(s) do you belong?  How did you find out (command used)?
+	Command: "id"; anshika_jaiswal@instance-20250127-192038:~/cs131$ id
+	Output:
+	 uid=1001(anshika_jaiswal) gid=1002(anshika_jaiswal)
+ 	groups=1002(anshika_jaiswal),4(adm),20(dialout),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),118(netdev),119(lxd),1000(ubuntu),1001(google-sudoers)
+
+
+4) Using only "ls" (and maybe "grep"), can you find out which file under directory /proc/ contains information about memory (mem) on your server? Which file contains information about the CPU's on your server?
+	yes, by using "/proc/grep meminfo" and "/proc/grep cpuinfo"
+
+
+5) Use head to check the memory information file you found above. How much total memory is on your server?
+	Command: head /proc/meminfo
+	MemTotal:         976904 kB
+
+
+6) Then use head, tail, cat to check the cpu information file you found above. How many processors are on your server? What is the processor architecture name? What is the processor speed in GHz?
+	processor       : 2
+	model name      : Intel(R) Xeon(R) CPU @ 2.20GHz
+	cpu MHz         : 2200.220
+
+
+7) Identify the operating system version. Which file under /etc/ contains this information?
+	Operating system version: “Ubuntu 20.04.6 LTS (Focal Fossa)”. Was found under /etc/*release
+
+

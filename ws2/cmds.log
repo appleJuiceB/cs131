@@ -1,0 +1,49 @@
+    1  git -V
+    2  git --version
+    3  mkdir cs131
+    4  cd cs131
+    6  echo "this is my readme" > README.md
+    7  git init
+    8  ls
+    9  git add README.md
+   10  git status
+   11  git commit -m "first commit"
+   12  git config --global user.email "anshikaj03@gmail.com"
+   13  git config --global user.name "anshika"
+   14  git commit -m "first commit"
+   15  git branch -M main
+   16  git remote add origin https://github.com/appleJuiceB/cs131.git
+   20  git push -u origin main
+   21  git status
+   22  echo "add another line" >> README.md
+   23  git status
+   24  git add README.md
+   25  git commit -m "add another line in README"
+   27  git push -u origin main
+   28  ls
+   29  cd cs131
+   30  ls
+   31  mkdir ws2
+   32  ls
+   33  echo "Test File" > ws2/test.txt
+   34  git commit -m "Adding directory ws2"
+   35  git add ws2
+   36  git commit -m "Adding directory ws2"
+   37  git push origin main
+   38  ls
+   39  cd cs131
+  132  ls /proc/meminfo
+  133  head /proc/meminfo
+  134  head /proc/cpuinfo
+  135  tail  /proc/cpuinfo
+  136  grep -c "processor" /proc/cpuinfo
+  137  grep "model name" /proc/cpuinfo | head -1
+  138  cat /proc/cpuinfo
+  139  cat /etc/*release
+  142  cat /etc/os-release
+  143  cd ws2
+  144  touch ws2.txt
+  145  ls
+  146  cd ws2.txt
+  147  vim ws2.txt
+  148  history > cmds.log
