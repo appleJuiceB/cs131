@@ -1,0 +1,24 @@
+  214  apt install python3-pip
+  215  sudo apt install python3-pip
+  217  pip install gdown
+  224  /home/anshika_jaiswal/.local/bin/gdwon 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  231  mkdir ws3
+  232  cd ws3
+  233  touch ws3.txt
+  263  head -n 5 2019-01-h1.csv
+  267  mv 2019-01-h1.csv taxi_dataset.csv
+  268  ls
+  269  cd cs131/ws3
+  274  cd ws3
+  282  grep "2019-01-02" taxi_dataset.csv > jan2_trips.csv
+  283  head -n 5 jan2_trips.csv
+  284  ls
+  287  cut -d ',' -f 8 jan2_trips.csv > jan2_locations.txt
+  288  sort jan2_locations.txt | uniq -c | sort -nr | head -3 > ws3.txt
+  289  ls
+  290  vim ws3.txt
+  291  grep "2019-01-10" taxi_dataset.csv > jan10.csv
+  296  cut -d ',' -f 8 jan10.csv > jan10_loc.txt 
+  297  sort jan10_loc.txt | uniq -c| sort -nr | head -3 >> ws3.txt
+  298  vim ws3.txt
+  299  history > cmds.log
