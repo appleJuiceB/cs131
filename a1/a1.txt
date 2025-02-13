@@ -1,0 +1,16 @@
+Mean fare for 151-239: 6.64
+Mean fare for 239-246: 12.43
+
+Highest total amount paid by customers on Jan 10 2019: 36090.3
+
+10 most popular drop off locations in Jan 2019:
+ 137950 236.0
+ 119538 237.0
+ 114418 161.0
+  96658 170.0
+  92930 230.0
+  90657 162.0
+  85880 142.0
+  85105 48.0
+  84408 239.0
+  83470 141.0

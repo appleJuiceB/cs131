@@ -1,0 +1,47 @@
+  382  cd cs131
+  383  mkdir a1
+  385  touch a1.txt
+  418  cp taxi_dataset.csv ~/cs131/a1
+  424  grep "2019-01" taxi_dataset.csv > jan_trips.csv
+  425  head -n 5 jan_trips.csv
+  426  mkdir FARE
+  516  head -n 5 jan_trips.csv
+  517  head -n 5 taxi_dataset.csv
+  518  cd FARE
+  520  cd ..
+  521  grep ',151.0,239.0,' jan_trips.csv | cut -d ',' -f 11 > FARE/151.txt
+  526  grep ',239.0,246.0,' jan_trips.csv | cut -d ',' -f 11 > FARE/239.txt
+  527  cd FARE
+  528  head -n 5 239.txt
+  529  mv 151.txt 151-239.txt
+  531  mv 239.txt 239-246.txt
+  551  total1=$(paste -sd+ 151-239.txt | bc)
+  552  count1=$(wc -l < 151-239.txt)
+  553  mean1=$(echo "scale=2; $total1 / $count1" | bc)
+  555  echo "Mean fare for 151-239: $mean1" > ../a1.txt
+  556  cd ..
+  557  cat a1.txt
+  558  cd FARE
+  559  total2=$(paste -sd+ 239-246.txt | bc)
+  560  count2=$(wc -l < 239-246.txt)
+  561  mean2=$(echo "scale=2; $total2 / $count2" | bc)
+  562  echo "Mean fare for 151-239: $mean2" >> ../a1.txt
+  563  cd ..
+  568  cat a1.txt
+  569  grep '2019-01-10' taxi_dataset.csv > jan10_trips.txt
+  570  ls
+  571  cut -d',' -f17 jan10_trips.txt > jan10_total_amounts.txt
+  572  sort -n jan10_total_amounts.txt | tail -1 >> a1.txt
+  573  vim a1.tx
+  574  sort -n jan10_total_amounts.txt | tail -1
+  575  head -n 5 jan10_total_amounts.txt
+  576  wc -l jan10_total_amounts.txt
+  577  ls
+  578  grep ',[3-9]\.' jan_trips.csv > rides_3_or_more_customers.csv
+  579  cut -d',' -f9 rides_3_or_more_customers.csv > dropoff_locations.txt
+  580  sort dropoff_locations.txt | uniq -c | sort -nr | head -10
+  581  sort dropoff_locations.txt | uniq -c | sort -nr | head -10 >> a1.txt
+  582  vim a1.txt
+  583  cd cs131
+  584  cd a1
+  585  history > cmds.log
