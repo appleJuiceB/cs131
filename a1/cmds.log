@@ -45,3 +45,10 @@
   583  cd cs131
   584  cd a1
   585  history > cmds.log
+  586  vim .bashrc
+  587  source ~/.bashrc
+  588  clear
+  589  cd cs131/a1
+  590  l
+  591  w
+  592  history > cmds.log
