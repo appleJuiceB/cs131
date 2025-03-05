@@ -1,0 +1,11 @@
+  496  cd cs131
+  497  mkdir a2
+  569  cd a2
+  590  vim batchRename.sh
+  591  cat batchRename.sh
+  592  chmod 755 batchRename.sh
+  593  ls -l
+  594  vim README.md
+  596  touch text{1..3}.txt
+  600  ./batchRename.sh "text" "newText_" "*.txt"
+  602  history > cmds.log
