@@ -1,0 +1,10 @@
+  614  mkdir ws4
+  662  cp taxi_dataset.csv ws4/
+  666  cd ws4
+  667  ls
+  668  vim reorg.sh
+  670  sh reorg.sh
+  671  ls
+  672  cat ws4.txt
+  673  vim ws4.txt
+  674  history | tail -100 >> cmds.log
