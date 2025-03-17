@@ -27,7 +27,7 @@ IMG_002.jpg
 IMG_003.jpg  
 
 Command execution:  
-./batchRename.sh IMG_ MRIscan_ *.jpg  
+./batchRename.sh "IMG_"  "MRIscan_"  "*.jpg"  
 
 After running the command:  
 
