@@ -1,0 +1,31 @@
+ WS 5
+  614  mkdir ws56
+  615  cd cs131/ws56
+  616  cd ..
+  617  cp taxi_dataset ws56/
+  618  cd cs131/ws56
+  633  sed -n '/^2.0,/p' taxi_dataset.csv > vendor2.csv
+  635  head -5 vendor2.csv
+  636  wc vendor2.csv > ws56.txt
+  637  cat ws56.txt
+  639  sed 's/[:"-]//g' taxi_dataset.csv > no-separators.csv
+  640  head -10 no-separators.csv >> ws56.txt
+  641  cat ws56.txt
+  642  sed 's/\.[0-9]*//g' no-separators.csv > no-fractions.csv
+  643  head -10 no-fractions.csv >> ws56.txt
+  649  cat ws56.txt
+  650  vim ws56.txt
+  651  history | tail -n 200 >> cmds.log
+WS 6
+  789  awk -F, '$17 >= 10' taxi_dataset.csv > over10.csv
+  790  head -n 4 over10.csv
+  796  vim ws56.txt
+  798  vim tipCount.awk
+  799  awk -f tipCount over10.csv
+  800  awk -f tipCount over10.csv >> ws56.txt
+  801  vim ws56.txt
+  803  awk -f tipCount.awk over10.csv | sort -k2,2nr | head -n 20 >>  ws56.txt
+  804  vim ws56.txt
+  840  cat tipCount.awk
+  841  vim ws56.txt
+  842  vim cmds.log
