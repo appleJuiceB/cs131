@@ -28,41 +28,29 @@ vendorid,tpep_pickup_datetime,tpep_dropoff_datetime,passenger_count,trip_distanc
 
 TASK 2: (I put #2 first bc #1 had huge output)
 
-2) Top 20 Most Common Tips
+2) Top 20 Most Common Tips for FULL data set
 
-0.0 545178
-1.0 85412
-2.0 78947
-1.76 43173
-1.86 41198
+0.0 1197606
+1.0 206290
+2.0 98155
+1.46 47962
+1.56 47482
+1.36 46758
+1.66 45504
+1.26 43497
+1.76 43174
+1.86 41210
+1.5 39130
 1.96 38381
+1.16 37188
 2.06 35855
-2.16 32715
-1.5 30581
-2.26 29302
-2.45 27069
-3.0 26542
-2.36 26419
-2.46 23844
-1.75 23767
-2.05 23278
-1.85 22230
-5.0 21364
-2.56 21177
-2.2 19822
+1.95 33751
+2.16 32716
+1.55 32125
+1.7 31874
+1.45 31467
+1.25 30079
 
-script made for #1:
-
-BEGIN{
-        FS = ","
-}
-{tips[$14]++}
-
-END {
-        for( t in tips){
-                print t, tips[t]
-        }
-}
 
 1) Tip Frequency
 9.34 2

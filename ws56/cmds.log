@@ -24,8 +24,22 @@ WS 6
   799  awk -f tipCount over10.csv
   800  awk -f tipCount over10.csv >> ws56.txt
   801  vim ws56.txt
-  803  awk -f tipCount.awk over10.csv | sort -k2,2nr | head -n 20 >>  ws56.txt
+  803  awk -f tipCount.awk taxi_dataset.csv | sort -k2,2nr | head -n 20 >>  ws56.txt
   804  vim ws56.txt
   840  cat tipCount.awk
   841  vim ws56.txt
   842  vim cmds.log
+
+
+tipCount.awk script: 
+
+BEGIN{
+        FS = ","
+}
+{tips[$14]++}
+
+END {
+        for( t in tips){
+                print t, tips[t]
+        }
+}
