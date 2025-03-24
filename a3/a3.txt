@@ -1,0 +1,21 @@
+Results from using grader.awk on following data: 
+StudentID,Name,CS146,CS131,CS100W
+101,Alice,85,90,78
+102,Bob,76,82,88
+103,Charlie,90,85,95
+104,David,65,70,60
+105,Eve,88,92,85
+
+
+
+RESULTS: 
+Name Total Avg Status
+David 195 65 Fail
+Eve 265 88.3333 Pass
+Bob 246 82 Pass
+Charlie 270 90 Pass
+Alice 253 84.3333 Pass
+
+Highest Scoring Student:  Charlie with total of  270  and an average of  90
+
+Lowest Scoring Student:  David with total of  195  and an average of  65
